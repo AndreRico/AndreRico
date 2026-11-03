@@ -40,6 +40,28 @@ and each container would need its own credentials, connections and copy of the d
 PostgreSQL server becomes a cost, a bottleneck under many concurrent jobs, and a single point of
 failure.
 
+## Architecture at a glance
+
+<div class="column-page">
+
+```mermaid
+flowchart LR
+  subgraph SRC["17 public sources"]
+    CORE["Core knowledge<br>HGNC · NCBI · Ensembl · UniProt<br>Reactome · KEGG · GO · MONDO · …"]
+    VAR["Variant data<br>gnomAD · VEP · AlphaMissense · GTEx"]
+  end
+  CORE --> ETL["21 ETL pipelines<br>extract → transform → load"]
+  ETL --> STG[("Relational staging<br>entity resolution")]
+  VAR --> STREAM["Streamed straight<br>to Parquet"]
+  STG --> BUNDLE[/"Frozen bundle<br>Parquet tables + manifest"/]
+  STREAM --> BUNDLE
+  BUNDLE --> DUCK["DuckDB inside the<br>researcher's Python process"]
+  DUCK --> REP["17 reports<br>annotation · filtering · interactions<br>network expansion · cohort binning"]
+  BUNDLE --> KG["Node and edge lists<br>→ DRIVE-KG knowledge graph"]
+```
+
+</div>
+
 ## What I built
 
 Biofilter is built around one idea: **build once, freeze it, reuse it everywhere**.

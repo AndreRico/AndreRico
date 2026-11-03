@@ -1,15 +1,31 @@
-# Andre Rico
+# Andre G. Rico
 
-**Senior Application Developer · Data systems for genomics and finance**\
-Charlottesville, VA · [LinkedIn](https://linkedin.com/in/alrico) · [GitHub](https://github.com/AndreRico)
+**Financial Data Engineer & FP&A Systems Architect**\
+Anaplan Certified · SAP BW/BPC · Python · AI forecasting\
+Charlottesville, VA · [LinkedIn](https://linkedin.com/in/alrico) · [GitHub](https://github.com/AndreRico) · 📄 [**Résumé (PDF)**](https://andrerico.github.io/AndreRico/resume.pdf)
 
-I build data systems that scale, from corporate finance data warehouses to genomic pipelines
-that process billions of variants. My path runs through infrastructure, SAP and BI, FP&A, and
-now bioinformatics, and the common thread is the same: take messy data from many sources and
-turn it into something reliable that people can make decisions with.
+I build the systems finance runs on. At Klabin, one of Brazil's largest pulp-and-paper companies,
+I spent a decade building the SAP data warehouse and then the FP&A area on top of it, cutting the
+close and reporting cycle from about 4 days to less than 1. Since then I've built large-scale data
+platforms and machine-learning pipelines for genomic research at Penn State and the University
+of Pennsylvania, and [12true](finance/12true.md), a household finance platform built on a
+double-entry ledger.
+
+**What I bring**
+
+- **Finance from the inside:** budgeting, consolidation, CAPEX, intercompany and management
+  reporting. Registered accountant in Brazil (CRC-SP).
+- **Engineering at scale:** enterprise data warehouses, pipelines over billions of genetic variants,
+  and full-stack platforms with more than 1,700 automated tests.
+- **AI applied to decisions:** forecasting, machine-learning models and LLM assistants that work
+  on real, governed data.
+
+<div class="github-only">
 
 > 🌐 **Prefer a website?** The same portfolio, with navigation and search:
 > **[andrerico.github.io/AndreRico](https://andrerico.github.io/AndreRico/)**
+
+</div>
 
 ---
 
@@ -26,8 +42,8 @@ turn it into something reliable that people can make decisions with.
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| [**12TRUE**](finance/12true.md) | Personal project: full-stack app that consolidates financial data across institutions and countries | React · TypeScript · Django · Plaid · LLMs |
-| [**FP&A: area and platform**](finance/klabin-planning.md) | Built Klabin's FP&A area into the data warehouse (2016–2018), then led it full time (2018–2021): consolidation, budgeting, CAPEX, KPIs, automated books and releases, faster results | SAP BW-IP · BPC · HANA · AWS |
+| [**12true**](finance/12true.md) | Personal project: cross-border household finance platform on a double-entry ledger, with bank sync, receipt reading, US tax organizers and an AI assistant. In production · ~1,700 tests · 46 ADRs | Python · Django · PostgreSQL · React · TypeScript · Plaid · LLMs |
+| [**FP&A: area and platform**](finance/klabin-planning.md) | Built Klabin's FP&A area into the data warehouse (2016–2018), then led it full time (2018–2021): close and reporting cycle from ~4 days to <1, CAPEX, intercompany, EBITDA attribution | SAP BW-IP · BPC · HANA · AWS |
 | [**Data warehouse & BI**](finance/klabin-bi.md) | 10 years on Klabin's SAP BI platform: one enterprise data warehouse, BW 3.5 → 7.4 on HANA, ML talent intelligence for HR, security and automation | SAP BW · HANA · ABAP · Pentaho · Hadoop/Hive |
 
 ---
@@ -58,12 +74,17 @@ turn it into something reliable that people can make decisions with.
 
 ## 🛠️ Toolbox
 
-**Languages:** Python · TypeScript/JavaScript · SQL (T-SQL) · ABAP
-**Back end & front end:** Django / DRF · REST APIs · React · Vite · Tailwind · Docker
-**Data:** database design · data warehousing (SAP BW/HANA, BW-IP, BPC) · data lakes (Hadoop, Hive) · ETL (Pentaho) · Tableau
-**Science & ML:** GWAS / ExWAS · gene-burden tests · ML pipelines on HPC/GPU clusters
-**AI:** AI coding agents · LLM integration (document parsing, conversational assistants)
-**Cloud & practices:** AWS · Linux · Agile · code review · PII protection · ADRs
+| Area | Tools and skills |
+| --- | --- |
+| **Planning & EPM** | Anaplan (Certified Model Builder) · SAP BPC · SAP BW-IP · driver-based planning · financial modeling |
+| **Finance** | FP&A · close & consolidation · budgeting & forecasting · CAPEX · intercompany & managerial costing · US cross-border tax reporting (FBAR, 8938, PFIC) |
+| **Data engineering** | SQL · SAP BW 7.4 on HANA · PostgreSQL · data warehousing & modeling · ETL (Pentaho) · Hadoop / Hive · Parquet |
+| **Analytics & ML** | Python (pandas, statsmodels) · statistical modeling · ML on HPC/GPU clusters · Tableau · BusinessObjects |
+| **AI** | LLM integration (tool use, document parsing, assistants) · AI coding agents |
+| **Software** | Django · React · TypeScript · REST APIs · Docker |
+| **Cloud & practices** | AWS · Linux · Agile · ADRs · data governance & PII protection |
+
+**Currently learning:** SAP Analytics Cloud Planning · Databricks · dbt · Anaplan PlanIQ
 
 → [Career path, education and languages](about.md)
 

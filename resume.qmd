@@ -1,0 +1,116 @@
+---
+title: "Andre G. Rico"
+format:
+  typst:
+    papersize: us-letter
+    margin:
+      x: 0.7in
+      y: 0.6in
+    fontsize: 10pt
+    output-file: resume.pdf
+---
+
+```{=typst}
+#set par(justify: false, leading: 0.55em)
+#show heading.where(level: 1): it => block(above: 1.1em, below: 0.5em)[
+  #text(size: 11pt, weight: "bold", fill: rgb("#1f3a5f"), upper(it.body))
+  #v(-0.6em)
+  #line(length: 100%, stroke: 0.5pt + rgb("#1f3a5f"))
+]
+#show heading.where(level: 2): it => block(above: 0.8em, below: 0.3em)[
+  #text(size: 10pt, weight: "bold", it.body)
+]
+```
+
+**Financial Data Engineer & FP&A Systems Architect**\
+Charlottesville, VA · ricoandre@hotmail.com · [linkedin.com/in/alrico](https://linkedin.com/in/alrico) · Portfolio: [andrerico.github.io/AndreRico](https://andrerico.github.io/AndreRico/)
+
+## Summary
+
+I build the systems finance runs on. At Klabin, one of Brazil's largest pulp-and-paper companies, I
+spent a decade building the SAP data warehouse and then the FP&A area on top of it, cutting the close
+and reporting cycle from about 4 days to less than 1. Since moving to the US I have built large-scale
+data platforms and machine-learning pipelines at Penn State and the University of Pennsylvania.
+Registered accountant (Brazil), Anaplan Certified Model Builder, and hands-on engineer in Python and SQL.
+
+## Core skills
+
+**Planning & EPM:** Anaplan · SAP BPC · SAP BW-IP · driver-based planning · financial modeling\
+**Finance:** FP&A · close & consolidation · budgeting & forecasting · CAPEX · intercompany & managerial costing\
+**Data:** SQL · SAP BW 7.4 on HANA · PostgreSQL · data warehousing · ETL (Pentaho) · Hadoop / Hive\
+**Analytics, ML & AI:** Python · statistical modeling · ML on HPC/GPU · LLM integration · Tableau · BusinessObjects\
+**Software & cloud:** Django · React · TypeScript · Docker · AWS · Linux · Agile
+
+## Experience
+
+### Senior Application Developer — University of Pennsylvania, Perelman School of Medicine · 2024 – present
+
+- Lead developer of Biofilter, a versioned knowledge platform that integrates more than a dozen public
+  databases; its data powers the 13.8M-node knowledge graph behind DRIVE-KG (PSB 2026).
+- Statistical genetics and machine-learning research on the Penn Medicine BioBank (260,000+ participants):
+  pipelines over billions of genetic variants and multi-terabyte datasets on HPC and GPU clusters.
+- Built MyNHANES, a platform that downloads, normalizes and harmonizes NHANES survey data across
+  cycles for longitudinal analysis.
+- PharmCAT team member: tested the pharmacogenomics tool on AnVIL, Terra, All of Us, UK Biobank,
+  DNAnexus and AWS, and built pipeline templates for other researchers.
+
+### Senior Application Developer — Penn State University, College of Agricultural Sciences · 2022 – 2024
+
+- Built IGEM, a gene–exposure knowledge base (25 ETL pipelines, PostgreSQL, FastAPI, public website);
+  first-author paper at the Pacific Symposium on Biocomputing 2025.
+- Extended and applied CLARITE, a framework for association and interaction analyses in
+  population-scale datasets.
+- Built a data integration system for heterogeneous clinical-study datasets with PII protection.
+
+### Senior Consultant, FP&A — Klabin S/A, São Paulo · 2018 – 2021
+
+- Led FP&A full time: annual budget, variance analysis, product-mix and margin analysis, long-term
+  projections and reports for executive leadership.
+- Automated management calculations and chained results; reduced the time to publish results.
+- Delivered an integrated CAPEX planning and depreciation model (2019) and a managerial cost and
+  intercompany planning system for pricing and inventory valuation across entities (2020).
+
+### Senior Consultant, FP&A and BI — Klabin S/A, São Paulo · 2016 – 2018
+
+- Built the FP&A area inside the enterprise data warehouse, integrating all financial information.
+- Redesigned consolidation and management reporting, cutting the close and reporting cycle from
+  about 4 days to less than 1; redesigned budgeting and planning on SAP BW-IP and BPC.
+- Delivered value-chain cost and EBITDA attribution (2017) and an automated management reporting
+  platform (2018); automated management books and earnings releases.
+
+### Business Intelligence Senior — Klabin S/A, São Paulo · 2008 – 2016
+
+- Built and ran the SAP BI platform for finance, forestry, pulp and paper, and HR; led the migration
+  from SAP BW 3.5 to BW 7.4 on HANA.
+- Built a machine-learning talent-intelligence engine on SAP HCM: candidate suggestions, positions at
+  risk, training recommendations and turnover reduction.
+- Owned security, backups, load monitoring and development processes; led BI project teams.
+
+### Earlier roles · 2000s – 2008
+
+SAP BW Analyst and infrastructure at Cimpor Cimentos de Portugal · Data Warehouse Administrator at
+Gillette do Brasil (P&G) · Network and Windows server administration at ACSP.
+
+## Projects
+
+**12true** (personal project, 2026 – present): household finance platform on a double-entry ledger,
+with bank sync (Plaid), receipt reading, US tax organizers and an LLM assistant. Django, PostgreSQL,
+React; ~1,700 automated tests.\
+**SaaS Handbook** (2026): open book on managing and operating SaaS for small teams, built with
+Quarto and GitHub Actions. [garon-sys.github.io/saas-handbook](https://garon-sys.github.io/saas-handbook/)
+
+## Education & certifications
+
+**BSc in Data Science** (US equivalent) — University City of São Paulo ·
+**Postgraduate in Business Administration** — FAAP · **BSc in Accounting** — Mackenzie Presbyterian University\
+**Anaplan Certified Model Builder** (2025) · **Registered accountant**, CRC-SP, Brazil (2016)
+
+## Publications
+
+Rico ALG, Palmiero N, Ritchie MD, Hall MA. Integrated exposomic analysis of lipid phenotypes. *PSB*, 2025 (first author).\
+DRIVE-KG: variant-phenotype association discovery with heterogeneous knowledge graphs. *PSB*, 2026 (co-author).\
+Co-author of medRxiv preprints on nonadditive GWAS (2023) and metal exposure and circulating miRNAs (2025 – 2026).
+
+## Languages
+
+English (fluent) · Portuguese (native) · Spanish (reading and listening)

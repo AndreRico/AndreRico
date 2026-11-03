@@ -1,0 +1,11 @@
+<!-- Renders ```mermaid blocks (the same syntax GitHub uses) on the Quarto site -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = document.body.classList.contains("quarto-dark");
+  mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "neutral", securityLevel: "strict" });
+  document.querySelectorAll("pre.mermaid").forEach((pre) => {
+    const code = pre.querySelector("code");
+    if (code) pre.textContent = code.textContent;
+  });
+  await mermaid.run({ querySelector: "pre.mermaid" });
+</script>

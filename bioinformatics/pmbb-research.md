@@ -40,9 +40,11 @@ independently. I present the results to the research groups.
 Machine-learning models trained on GPU clusters to study the genetic architecture of
 cardiovascular traits, alongside association analyses.
 
+<!-- TODO (Andre): add when ready
 ### Breast cancer
 
-<!-- TODO (Andre): one or two lines on the question and the methods. -->
+One or two lines on the question and the methods.
+-->
 
 ## Methods
 

@@ -11,10 +11,11 @@ project:
 lang: en
 
 website:
-  title: "Andre Rico"
+  title: "Andre G. Rico"
   site-url: https://andrerico.github.io/AndreRico/
   repo-url: https://github.com/AndreRico/AndreRico
   repo-actions: [source]
+  open-graph: true
   search: true
   page-navigation: true
   navbar:
@@ -53,6 +54,7 @@ format:
       light: cosmo
       dark: darkly
     css: styles.css
+    include-after-body: mermaid.html
     toc: true
     link-external-newwindow: true
 

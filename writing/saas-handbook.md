@@ -21,7 +21,7 @@ personal-finance app and the experience I gain along the way.
 ## What I built
 
 A book of 14 chapters and 4 appendices (about 10,000 words), built from the practices behind
-[12TRUE](../finance/12true.md):
+[12true](../finance/12true.md):
 
 | Part | Topics |
 | --- | --- |

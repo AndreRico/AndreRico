@@ -17,7 +17,7 @@ include:
 - participant-level data or unpublished study results;
 - figures, reports or internal documents from Klabin or any other employer;
 - schemas, addresses or infrastructure details of production systems;
-- source code from 12TRUE.
+- source code from 12true.
 
 Screenshots use fictional data only.
 

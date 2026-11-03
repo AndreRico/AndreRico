@@ -3,8 +3,18 @@ title: "12true"
 subtitle: "A cross-border household finance platform built on double-entry accounting"
 ---
 
-**Role:** founder, product owner and sole developer · personal venture · 2026 – present\
+**Role:** designer and sole developer · personal project · 2026 – present\
 **Links:** [Website](https://12true.com) · Repository (private, available on request)
+
+## At a glance
+
+- **What:** a household finance platform for families living between countries, built on a
+  double-entry ledger, with bank connections, receipt reading, tax organizers and an AI assistant.
+- **Scale:** ~1,080 commits in six months · ~1,700 automated tests · 46 architecture decision
+  records · ~113k lines of Python and TypeScript.
+- **Status:** in production and used daily by my own household.
+- **Built end to end by me:** product, data model, backend, two web apps, public site, bilingual
+  user guide, infrastructure and planning.
 
 ## In one paragraph
 
@@ -58,6 +68,31 @@ each one turns into concrete product behavior:
 | There is no anonymous expense | Every entry is classified; purchase rules and the assistant make that cheap |
 | The data belongs to the user | Isolation in the database, column encryption, export; the AI proposes, the user confirms |
 | The more you have, the harder it gets | Multi-country, multi-currency, documents and contracts are the base product, not a premium tier |
+
+## Architecture at a glance
+
+<div class="column-page">
+
+```mermaid
+flowchart LR
+  subgraph IN["Data in"]
+    BANK["Bank sync"]
+    CSV["CSV import"]
+    RCPT["Receipt photo<br>vision model"]
+    MAN["Manual entry"]
+  end
+  AI["AI assistant<br>read-only tools, real SQL"] -. "proposal" .-> OK{"User<br>confirms"}
+  IN --> LEDGER
+  OK --> LEDGER[["Ledger service<br>the only writer<br>Σ cash legs + Σ result items = 0"]]
+  LEDGER --> POS["Positions<br>quantity × price"]
+  LEDGER --> COM["Commitments<br>loans · leases · salaries"]
+  POS & COM --> OUT["<b>What the household sees</b><br>balance sheet · income statement · cash flow<br>net-worth bridge · cash projection<br>tax organizers: Schedule B/E · 1116 · FBAR · 8938 · PFIC"]
+  OUT --> AI
+```
+
+</div>
+
+<sub>Every household's data is isolated by the database itself (row-level security).</sub>
 
 ## What I built
 
@@ -130,17 +165,13 @@ household can bring its own API key to control cost and provider.
 
 ### Security designed in from the first model
 
-- **Multi-tenancy enforced by the database, not by queries:** PostgreSQL Row Level Security, with
-  middleware switching to a restricted role on every request. Every new model ships with an
-  isolation test, and that rule blocks commits.
-- **Column and file encryption** for bank credentials and sensitive fields (Fernet with key
-  rotation, keys only in the environment, never in the database). A test reads the raw column with
-  SQL and proves the plaintext is not on disk. Files are served only through an authenticated route,
-  never from a public bucket URL.
+- **Multi-tenancy enforced by the database, not by queries:** PostgreSQL Row Level Security.
+  Every new model ships with an isolation test, and that rule blocks commits.
+- **Column and file encryption** for bank credentials and sensitive fields, with key rotation and
+  keys kept outside the database. A test reads the raw column with SQL and proves the plaintext is
+  not on disk. Files are served only to authenticated users.
 - **Sensitivity declared by type,** in three levels, which also decides what the AI assistant is
   allowed to see.
-- Session authentication with `httpOnly` cookies on the same origin: no JWT and no CORS to work
-  around.
 
 ## How I managed it, end to end
 
@@ -164,42 +195,25 @@ v1**. I retired v1 completely: containers, DNS and databases, with the code arch
 
 **Execution is planned and visible.** The road to a private beta is a GitHub Project epic, broken
 into phases. Its entry rule is simple: *anything that protects a third party's data comes before
-the third party*. Password reset, login rate limiting, access logs, self-service export and account
-deletion, an incident plan, a timed disaster-recovery restore, Terms and Privacy (LGPD and GDPR),
-and Plaid production approval all come before the first outside user is invited.
+the third party*. A security, privacy and compliance gate (including Terms and Privacy under LGPD
+and GDPR) must be passed before the first outside user is invited.
 
 **I used AI deliberately.** I worked with Claude as an architecture consultant and pair programmer,
 under explicit project rules: the ADRs govern, tests are mandatory before every commit, and the human
 decides. Every ADR names the decision owner.
 
-## Finance and business thinking
+## Finance behind the product
 
 - **Accounting as the foundation:** double-entry bookkeeping, accrual versus cash basis, cost basis
   and realized-gain methods, the link between the balance sheet, income statement and cash flow, loan
   amortization (PRICE and SAC), and cross-border tax reporting (FBAR, 8938, 1116, PFIC, Schedule E).
-- **A defined niche:** Brazilians living in the US who still hold accounts, property or investments
-  in Brazil. These are people who have outgrown spreadsheets and find budgeting apps too shallow.
-  The niche matches what is already built, since Plaid and the whole tax module are US-side.
-  Brazil (Open Finance) and Portugal come later.
-- **A pricing model consistent with the beliefs:** the price does **not** rise with the complexity
-  of someone's life. Being multi-country is the base case. The fair pricing axes are the ones with
-  real cost behind them: dedicated isolation, bank connections (Plaid cost per institution), data
-  volume, and AI usage, which is cheaper for those who bring their own key. The tax module is the one
-  open question, framed as a service that saves accountant time rather than as a "multi-country
-  feature".
 - **Clear about what it is not:** not a tax preparer, not financial advice, not a bank or a broker.
-  It never sells or monetizes user data, and it is not a five-minute budgeting app.
-- **Legal risk handled early:** a lawyer, an accountant and a tax disclaimer inside the product are
-  part of the beta plan, not an afterthought.
+  It never sells or monetizes user data.
 
-## Where it is going
+## What comes next
 
-| when | what |
-|---|---|
-| **Before the beta** | Data export, account deletion, access log, login rate limiting, incident plan, disaster-recovery drill, Terms and Privacy |
-| **During the beta** | Monthly closing report as a PDF by email with a summary from the assistant, financial health ratios (savings rate, runway, leverage, liquidity), 12-month cash curve, second factor (TOTP) |
-| **Next** | Brazilian and Portuguese tax organizers, Open Finance Brazil, inflation-adjusted net worth, mobile PWA |
-| **Horizon** | Controlled, logged sharing with an accountant or financial advisor |
+Monthly closing reports with a summary from the assistant, financial health ratios (savings rate,
+runway, leverage, liquidity), a 12-month cash curve, and tax organizers for Brazil and Portugal.
 
 ## Status and scale
 
@@ -214,6 +228,6 @@ decides. Every ADR names the decision owner.
 
 ## Stack
 
-Python · Django 6 (plain views, no DRF) · PostgreSQL 16 with Row Level Security · cryptography
-(Fernet) · Plaid · LLM APIs (vision and tool use) · React 19 · TypeScript · Vite · Tailwind ·
-Recharts · i18next · Eleventy · Caddy · Docker · Cloudflare R2 · GitHub Projects
+Python · Django 6 (plain views, no DRF) · PostgreSQL 16 with Row Level Security · cryptography ·
+Plaid · LLM APIs (vision and tool use) · React 19 · TypeScript · Vite · Tailwind ·
+Recharts · i18next · Eleventy · Docker · GitHub Projects
