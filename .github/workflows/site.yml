@@ -43,7 +43,7 @@ jobs:
           # Links to this repository and site are skipped: some only exist after the first push.
           args: >-
             --no-progress
-            --accept 200,206,403,429
+            --accept 200,203,206,403,429
             --exclude '^https://github\.com/AndreRico/AndreRico'
             --exclude '^https://andrerico\.github\.io/AndreRico'
             --exclude 'linkedin\.com'
