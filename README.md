@@ -18,14 +18,19 @@ turn it into something reliable that people can make decisions with.
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [**SaaS Handbook**](writing/saas-handbook.md) | Open book on managing and operating SaaS for small teams; the repo is its own example. 📖 [Read online](https://garon-sys.github.io/saas-handbook/) | Quarto · GitHub Actions · Pages |
+| **Bioinformatics** *(in progress)* | Open book on genomics and bioinformatics, built from years of notes, in the same format as the SaaS Handbook. 🗺️ [Roadmap](https://github.com/AndreRico/AndreRico/issues/1) | Quarto · GitHub Actions · Pages |
+
+---
 
 ## 💰 Finance & data platforms
 
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [**12TRUE**](finance/12true.md) | Personal project: full-stack app that consolidates financial data across institutions and countries | React · TypeScript · Django · Plaid · LLMs |
-| [**Budget & consolidation**](finance/klabin-planning.md) | Corporate budget, consolidation and a HANA data platform at Klabin | SAP BW-IP · BPC · HANA · AWS |
-| [**Data warehouse & BI**](finance/klabin-bi.md) | Data warehouse for finance, HR and operations, P&L automation, attrition model | SAP BW · ABAP · Pentaho · Hadoop/Hive |
+| [**FP&A: area and platform**](finance/klabin-planning.md) | Built Klabin's FP&A area into the data warehouse (2016–2018), then led it full time (2018–2021): consolidation, budgeting, CAPEX, KPIs, automated books and releases, faster results | SAP BW-IP · BPC · HANA · AWS |
+| [**Data warehouse & BI**](finance/klabin-bi.md) | 10 years on Klabin's SAP BI platform: one enterprise data warehouse, BW 3.5 → 7.4 on HANA, ML talent intelligence for HR, security and automation | SAP BW · HANA · ABAP · Pentaho · Hadoop/Hive |
+
+---
 
 ## 🧬 Genomic data systems
 
@@ -37,10 +42,19 @@ turn it into something reliable that people can make decisions with.
 | [**Penn Medicine BioBank research**](bioinformatics/pmbb-research.md) | Statistical genetics and ML on a 260,000+ participant biobank: hearing loss, cardiology and breast cancer | Python · HPC/GPU · ML |
 | [**PharmCAT**](bioinformatics/pharmcat.md) | Team member on an open-source tool that turns genotypes into prescribing recommendations; cross-platform testing and pipeline templates | Open source · VCF · cloud platforms |
 
+---
+
 ## 📄 Publications
 
-- **Rico ALG**, et al. *Integrated exposomic analysis of lipid phenotypes: leveraging GEdb in environment-by-environment interaction studies.* Pacific Symposium on Biocomputing, 2025.
-- Co-author on three more papers: knowledge-graph ML, nonadditive GWAS and miRNA biomarkers. → [All publications](publications.md)
+- Prado-Rico JM, Bargues-Carot A, …, **Rico ALG**, Hall MA, …, Huang X. [Neuron-derived circulating miRNAs reveal lead (Pb) as a key component of metal mixtures exposure](https://www.medrxiv.org/content/10.1101/2025.02.10.25322027v2). *medRxiv* (preprint), 2026.
+- Rajagopalan A, Nguyen TA, Guare LA, **Rico ALG**, …, Ritchie MD, Hall MA, Romano JD, Setia-Verma S. [DRIVE-KG: Enhancing variant-phenotype association discovery in understudied complex diseases using heterogeneous knowledge graphs](https://psb.stanford.edu/psb-online/proceedings/psb26/rajagopalan.pdf). *Pacific Symposium on Biocomputing*, 2026.
+- Rajagopalan A, Nguyen TA, Guare LA, **Rico ALG**, …, Setia-Verma S. [DRIVE-KG: Enhancing variant-phenotype association discovery in understudied complex diseases using heterogeneous knowledge graphs](https://www.medrxiv.org/content/10.1101/2025.08.19.25333942). *medRxiv* (preprint), 2025.
+- Bargues-Carot A, Prado-Rico JM, …, **Rico ALG**, Hall MA, …, Huang X. [MicroRNA expression in asymptomatic welders: implications for biomarker discovery for environmentally-linked neurodegenerative disorders](https://www.medrxiv.org/content/10.1101/2025.02.10.25322027v1). *medRxiv* (preprint), 2025. PMID [39990579](https://pubmed.ncbi.nlm.nih.gov/39990579/).
+- **Rico ALG**, Palmiero N, Ritchie MD, Hall MA. [Integrated exposomic analysis of lipid phenotypes: leveraging GE.db in environment by environment interaction studies](https://psb.stanford.edu/psb-online/proceedings/psb25/rico.pdf). *Pacific Symposium on Biocomputing*, 2025. **(first author)**
+- Zhou J, **Rico ALG**, Guare L, et al. [Flexibly encoded genome-wide association study identifies novel nonadditive genetic risk variants for cardiometabolic traits](https://www.medrxiv.org/content/10.1101/2023.06.01.23290857v2). *medRxiv* (preprint), 2023.
+- Zhou J, Guare L, **Rico ALG**, Gonzalez Zarzar T, Palmiero N, Assimes TL, Setia-Verma S, Hall MA. [Flexibly encoded GWAS identifies novel nonadditive SNPs in individuals of African and European ancestry](https://www.medrxiv.org/content/10.1101/2023.06.01.23290857v1.full). *medRxiv* (preprint), 2023.
+
+---
 
 ## 🛠️ Toolbox
 

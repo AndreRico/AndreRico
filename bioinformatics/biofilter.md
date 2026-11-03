@@ -115,7 +115,7 @@ serverless Parquet bundles and migrated every report to the new read path.
 ## Impact
 
 - Its data powers the **13.8M-node knowledge graph** behind DRIVE-KG
-  ([medRxiv, 2025](https://www.medrxiv.org/content/10.1101/2025.08.19.25333942)).
+  ([PSB 2026](https://psb.stanford.edu/psb-online/proceedings/psb26/rajagopalan.pdf)).
 - **Paper in preparation:** using Biofilter to discover gene–gene interactions in
   **Alzheimer's disease**.
 - Runs in production on Penn's HPC cluster (LPC) as a shared, read-only knowledge base for the

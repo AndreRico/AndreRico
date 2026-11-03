@@ -35,8 +35,6 @@ website:
           - bioinformatics/mynhanes.md
           - bioinformatics/pmbb-research.md
           - bioinformatics/pharmcat.md
-      - href: publications.md
-        text: Publications
       - href: about.md
         text: About
     right:
@@ -54,6 +52,7 @@ format:
     theme:
       light: cosmo
       dark: darkly
+    css: styles.css
     toc: true
     link-external-newwindow: true
 

@@ -11,7 +11,8 @@ BI and data warehousing → FP&A → bioinformatics systems and genomic data.
 | --- | --- | --- |
 | 2024 – present | Application Developer Senior | University of Pennsylvania, Perelman School of Medicine (Ritchie Lab) |
 | 2022 – 2024 | Programmer / Analyst, Biomedical Sciences | Penn State University (Hall Lab) |
-| 2016 – 2021 | Senior Consultant, FP&A and BI | Klabin S/A, São Paulo |
+| 2018 – 2021 | Senior Consultant, FP&A | Klabin S/A, São Paulo |
+| 2016 – 2018 | Senior Consultant, FP&A and BI (transition) | Klabin S/A, São Paulo |
 | 2008 – 2016 | Business Intelligence Senior | Klabin S/A, São Paulo |
 | 2003 – 2008 | IT Project Leader | Cimpor Cimentos de Portugal, São Paulo |
 | 2002 – 2003 | Data Warehouse Administrator | Gillette do Brasil (Procter & Gamble), São Paulo |
