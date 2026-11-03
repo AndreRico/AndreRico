@@ -1,97 +1,46 @@
 # Andre Rico
 
-**Senior Application Developer · Bioinformatics & Data Systems**
-University of Pennsylvania, Perelman School of Medicine
+**Senior Application Developer · Data systems for genomics and finance**\
+Charlottesville, VA · [LinkedIn](https://linkedin.com/in/alrico) · [GitHub](https://github.com/AndreRico)
 
-I build data systems that scale, from corporate finance data warehouses to genomic
-pipelines that process billions of variants. My path runs through infrastructure, SAP and BI,
-FP&A, and now bioinformatics, and the common thread is the same: take messy data from many
-sources and turn it into something reliable that people can make decisions with.
+I build data systems that scale, from corporate finance data warehouses to genomic pipelines
+that process billions of variants. My path runs through infrastructure, SAP and BI, FP&A, and
+now bioinformatics, and the common thread is the same: take messy data from many sources and
+turn it into something reliable that people can make decisions with.
 
----
-
-## 🧬 Bioinformatics
-
-### Biofilter 4
-A persistent, entity-centric biological knowledge platform: *build once, reuse across many analyses*.
-- Relational knowledge model (entities, aliases, relationships) with a resumable, provenance-tracked ETL (extract → parquet → load)
-- CLI, Python API, SQL and notebook access, plus a shared report layer
-- Runs as a local database, a shared team database, or a containerized app
-- Its data powers the 13.8M-node knowledge graph behind DRIVE-KG
-
-🔗 [Repository](https://github.com/RitchieLab/biofilter) · [Docs](https://biofilter.readthedocs.io) · [PyPI](https://pypi.org/project/biofilter/)
-
-### IGEM: Integrative Genome-Exposome Method
-Infrastructure and web platform for gene–environment research (geneexposure.org), with a
-knowledge database (GEdb) used in exposome-wide and interaction studies. Brought AI coding
-agents into the development workflow.
-
-🔗 [Repository](https://github.com/HallLab/IGEM)
-
-### Large-scale genomic studies
-Hearing-loss and cardiology studies on biobank-scale data: rare-variant gene-burden and ExWAS
-analyses, ML models on GPU clusters, and multi-terabyte pipelines designed to be replicable
-across biobanks.
-*(Methods and architecture only. No participant-level data is shared.)*
-
-### PharmCAT (contributor)
-Open-source pharmacogenomics tool (Stanford/Penn) that turns patient genotype files (VCF) into
-drug-prescribing recommendations from CPIC, DPWG and FDA guidelines.
-
-🔗 [pharmcat.clinpgx.org](https://pharmcat.clinpgx.org/)
-
-### National organ/specimen-bank transaction system
-Architecture and build of the SQL database behind a national specimen-bank system, deployed on
-secure AWS infrastructure with Penn's cloud team.
+> 🌐 **Prefer a website?** The same portfolio, with navigation and search:
+> **[andrerico.github.io/AndreRico](https://andrerico.github.io/AndreRico/)**
 
 ---
 
-## 💰 Finance & Data Platforms
+## 🧬 Genomic data systems
 
-### 12TRUE (personal project)
-A full-stack app that consolidates financial data across institutions and countries.
-- **Stack:** React · TypeScript · Vite · Tailwind · Django REST
-- Bank aggregation via Plaid, US tax-reporting features (e.g. FBAR)
-- LLM-based receipt parsing and a conversational assistant over the user's own financial data
-- Deployed to a production server
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [**Biofilter 4**](bioinformatics/biofilter4.md) | Persistent biological knowledge platform; its data powers the 13.8M-node knowledge graph behind DRIVE-KG | Python · SQL · ETL · CLI/API |
+| [**IGEM**](bioinformatics/igem.md) | Gene–exposure knowledge base and public website for gene–environment research | Python · Docker |
+| [**PharmCAT**](bioinformatics/pharmcat.md) | Contributor to an open-source tool that turns genotypes into prescribing recommendations | Open source · VCF |
+| [**Specimen-bank database**](bioinformatics/specimen-bank.md) | SQL database for a national organ/specimen-bank transaction system | SQL · AWS |
+| [**Large-scale genomic studies**](bioinformatics/genomic-studies.md) | Hearing-loss and cardiology studies: billions of variants, millions of participants | HPC/GPU · ML |
 
-<!-- TODO: add architecture diagram / screenshots. Source code stays private. -->
+## 💰 Finance & data platforms
 
-### FP&A and Business Intelligence (Klabin, 2008–2021)
-Twelve-plus years building the data side of corporate finance at one of Brazil's largest
-pulp-and-paper companies.
-- Built the corporate budget and consolidation systems (SAP BW-IP, BPC) and an SAP HANA data platform on AWS
-- Automated the managerial P&L with ETL pipelines in Pentaho, Hive and Hadoop
-- Led data-warehouse development for finance, HR and operations: ABAP business rules, a predictive attrition model and the SAP BW security model
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [**12TRUE**](finance/12true.md) | Personal project: full-stack app that consolidates financial data across institutions and countries | React · TypeScript · Django · Plaid · LLMs |
+| [**Budget & consolidation**](finance/klabin-planning.md) | Corporate budget, consolidation and a HANA data platform at Klabin | SAP BW-IP · BPC · HANA · AWS |
+| [**Data warehouse & BI**](finance/klabin-bi.md) | Data warehouse for finance, HR and operations, P&L automation, attrition model | SAP BW · ABAP · Pentaho · Hadoop/Hive |
 
----
+## 📘 Writing
 
-## 📘 SaaS Handbook
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [**SaaS Handbook**](writing/saas-handbook.md) | Open book on managing and operating SaaS for small teams; the repo is its own example | Quarto · GitHub Actions · Pages |
 
-An open book on **managing and operating software as a service for small teams** (1–8 people),
-built from the practices behind 12TRUE. ~10,000 words across 14 chapters and 4 appendices:
-management, delivery and operations.
+## 📄 Publications
 
-- **The repository is its own example:** its GitHub Projects board, PR/issue templates, ADRs and
-  CI workflow are the live examples the chapters point to
-- **Stack:** Quarto book, published to GitHub Pages by GitHub Actions on every merge, with a
-  link-check job on every PR
-- **Security by design:** every example uses *Farol*, a fictional SaaS, so no detail of a real
-  system is exposed
-- Bilingual: [English](https://github.com/Garon-Sys/saas-handbook) and [Portuguese](https://github.com/Garon-Sys/manual-saas) editions · text CC BY 4.0, code MIT
-
-📖 [Read online](https://garon-sys.github.io/saas-handbook/) · 🔗 [Repository](https://github.com/Garon-Sys/saas-handbook)
-
----
-
-## 📄 Selected Publications
-
-- **Rico ALG**, et al. [Integrated exposomic analysis of lipid phenotypes: leveraging GEdb in environment-by-environment interaction studies](https://psb.stanford.edu/psb-online/proceedings/psb25/rico.pdf). *Pacific Symposium on Biocomputing*, 2025.
-- [DRIVE-KG: Enhancing variant-phenotype association discovery in understudied complex diseases using heterogeneous knowledge graphs](https://www.medrxiv.org/content/10.1101/2025.08.19.25333942). *medRxiv*, 2025. (co-author)
-- Flexibly encoded genome-wide association study identifies novel nonadditive genetic risk variants for cardiometabolic traits. *medRxiv*, 2023. (co-author)
-- [MicroRNA expression in asymptomatic welders: implications for biomarker discovery for environmentally-linked neurodegenerative disorders](https://www.medrxiv.org/content/10.1101/2025.02.10.25322027v1). *medRxiv*, 2025. (co-author)
-
----
+- **Rico ALG**, et al. *Integrated exposomic analysis of lipid phenotypes: leveraging GEdb in environment-by-environment interaction studies.* Pacific Symposium on Biocomputing, 2025.
+- Co-author on three more papers: knowledge-graph ML, nonadditive GWAS and miRNA biomarkers. → [All publications](publications.md)
 
 ## 🛠️ Toolbox
 
@@ -100,15 +49,10 @@ management, delivery and operations.
 **Data:** database design · data warehousing (SAP BW/HANA, BW-IP, BPC) · data lakes (Hadoop, Hive) · ETL (Pentaho) · Tableau
 **Science & ML:** GWAS / ExWAS · gene-burden tests · ML pipelines on HPC/GPU clusters
 **AI:** AI coding agents · LLM integration (document parsing, conversational assistants)
-**Cloud & practices:** AWS · Linux · Agile · code review · PII protection
+**Cloud & practices:** AWS · Linux · Agile · code review · PII protection · ADRs
+
+→ [Career path, education and languages](about.md)
 
 ---
 
-## 🎓 Education
-- Associate degree in Data Science (São Paulo), US-evaluated BSc equivalent
-- Postgraduate degree in Business Administration, FAAP
-- BSc in Accounting, Mackenzie Presbyterian University
-
-**Languages:** Portuguese (native) · English (professional) · Spanish (reading and listening)
-
-📫 [LinkedIn](https://linkedin.com/in/alrico)
+<sub>This repository follows the practices of the [SaaS Handbook](https://garon-sys.github.io/saas-handbook/): decisions live in [`adr/`](https://github.com/AndreRico/AndreRico/tree/main/adr), and the site is published by [GitHub Actions](https://github.com/AndreRico/AndreRico/blob/main/.github/workflows/site.yml) on every push to `main`.</sub>

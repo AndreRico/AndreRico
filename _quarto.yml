@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site
+  # README.md is the GitHub view; the site's home page includes it (index.qmd).
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!README.md"
+    - "!adr/"
+
+lang: en
+
+website:
+  title: "Andre Rico"
+  site-url: https://andrerico.github.io/AndreRico/
+  repo-url: https://github.com/AndreRico/AndreRico
+  repo-actions: [source]
+  search: true
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Genomics
+        menu:
+          - bioinformatics/biofilter4.md
+          - bioinformatics/igem.md
+          - bioinformatics/pharmcat.md
+          - bioinformatics/specimen-bank.md
+          - bioinformatics/genomic-studies.md
+      - text: Finance
+        menu:
+          - finance/12true.md
+          - finance/klabin-planning.md
+          - finance/klabin-bi.md
+      - href: writing/saas-handbook.md
+        text: SaaS Handbook
+      - href: publications.md
+        text: Publications
+      - href: about.md
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/AndreRico
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/alrico
+        aria-label: LinkedIn
+  page-footer:
+    center: "Built with [Quarto](https://quarto.org/) · published by GitHub Actions"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    link-external-newwindow: true
+
+editor: source

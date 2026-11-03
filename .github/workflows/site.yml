@@ -1,0 +1,66 @@
+# Renders the site on every PR and publishes it to GitHub Pages on every push to main.
+name: Site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    name: Render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render the site
+        run: quarto render
+
+      - name: Upload the site for publishing
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  links:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          # Links to this repository and site are skipped: some only exist after the first push.
+          args: >-
+            --no-progress
+            --accept 200,206,403,429
+            --exclude '^https://github\.com/AndreRico/AndreRico'
+            --exclude '^https://andrerico\.github\.io/AndreRico'
+            --exclude 'linkedin\.com'
+            './**/*.qmd' './**/*.md'
+          fail: true
+
+  publish:
+    name: Publish to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: render
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

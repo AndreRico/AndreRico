@@ -1,0 +1,6 @@
+---
+pagetitle: "Andre Rico"
+toc: false
+---
+
+{{< include README.md >}}
