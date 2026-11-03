@@ -30,7 +30,7 @@ website:
           - finance/klabin-bi.md
       - text: Genomics
         menu:
-          - bioinformatics/biofilter4.md
+          - bioinformatics/biofilter.md
           - bioinformatics/igem.md
           - bioinformatics/mynhanes.md
           - bioinformatics/pmbb-research.md

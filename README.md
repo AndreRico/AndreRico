@@ -31,7 +31,7 @@ turn it into something reliable that people can make decisions with.
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| [**Biofilter**](bioinformatics/biofilter4.md) | Persistent biological knowledge platform; its data powers the 13.8M-node knowledge graph behind DRIVE-KG | Python · SQL · ETL · CLI/API |
+| [**Biofilter**](bioinformatics/biofilter.md) | Persistent biological knowledge platform; its data powers the 13.8M-node knowledge graph behind DRIVE-KG | Python · SQL · ETL · CLI/API |
 | [**IGEM**](bioinformatics/igem.md) | Gene–exposure knowledge base and public website for gene–environment research | Python · Docker |
 | [**MyNHANES**](bioinformatics/mynhanes.md) | Downloads, normalizes and harmonizes NHANES survey data across cycles into a local database, ready for analysis | Python · Django · SQLite |
 | [**Penn Medicine BioBank research**](bioinformatics/pmbb-research.md) | Statistical genetics and ML on a 260,000+ participant biobank: hearing loss, cardiology and breast cancer | Python · HPC/GPU · ML |
