@@ -13,15 +13,11 @@ turn it into something reliable that people can make decisions with.
 
 ---
 
-## 🧬 Genomic data systems
+## 📘 Writing
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| [**Biofilter 4**](bioinformatics/biofilter4.md) | Persistent biological knowledge platform; its data powers the 13.8M-node knowledge graph behind DRIVE-KG | Python · SQL · ETL · CLI/API |
-| [**IGEM**](bioinformatics/igem.md) | Gene–exposure knowledge base and public website for gene–environment research | Python · Docker |
-| [**PharmCAT**](bioinformatics/pharmcat.md) | Contributor to an open-source tool that turns genotypes into prescribing recommendations | Open source · VCF |
-| [**Specimen-bank database**](bioinformatics/specimen-bank.md) | SQL database for a national organ/specimen-bank transaction system | SQL · AWS |
-| [**Large-scale genomic studies**](bioinformatics/genomic-studies.md) | Hearing-loss and cardiology studies: billions of variants, millions of participants | HPC/GPU · ML |
+| [**SaaS Handbook**](writing/saas-handbook.md) | Open book on managing and operating SaaS for small teams; the repo is its own example. 📖 [Read online](https://garon-sys.github.io/saas-handbook/) | Quarto · GitHub Actions · Pages |
 
 ## 💰 Finance & data platforms
 
@@ -31,11 +27,15 @@ turn it into something reliable that people can make decisions with.
 | [**Budget & consolidation**](finance/klabin-planning.md) | Corporate budget, consolidation and a HANA data platform at Klabin | SAP BW-IP · BPC · HANA · AWS |
 | [**Data warehouse & BI**](finance/klabin-bi.md) | Data warehouse for finance, HR and operations, P&L automation, attrition model | SAP BW · ABAP · Pentaho · Hadoop/Hive |
 
-## 📘 Writing
+## 🧬 Genomic data systems
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| [**SaaS Handbook**](writing/saas-handbook.md) | Open book on managing and operating SaaS for small teams; the repo is its own example | Quarto · GitHub Actions · Pages |
+| [**Biofilter**](bioinformatics/biofilter4.md) | Persistent biological knowledge platform; its data powers the 13.8M-node knowledge graph behind DRIVE-KG | Python · SQL · ETL · CLI/API |
+| [**IGEM**](bioinformatics/igem.md) | Gene–exposure knowledge base and public website for gene–environment research | Python · Docker |
+| [**MyNHANES**](bioinformatics/mynhanes.md) | Downloads, normalizes and harmonizes NHANES survey data across cycles into a local database, ready for analysis | Python · Django · SQLite |
+| [**Penn Medicine BioBank research**](bioinformatics/pmbb-research.md) | Statistical genetics and ML on a 260,000+ participant biobank: hearing loss, cardiology and breast cancer | Python · HPC/GPU · ML |
+| [**PharmCAT**](bioinformatics/pharmcat.md) | Team member on an open-source tool that turns genotypes into prescribing recommendations; cross-platform testing and pipeline templates | Open source · VCF · cloud platforms |
 
 ## 📄 Publications
 

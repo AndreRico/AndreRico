@@ -6,11 +6,17 @@ subtitle: "An open book on managing and operating software as a service for smal
 **Role:** author and maintainer · 2026 – present\
 **Links:** [Read online](https://garon-sys.github.io/saas-handbook/) · [Repository](https://github.com/Garon-Sys/saas-handbook) · [Portuguese edition](https://github.com/Garon-Sys/manual-saas)
 
-## The problem
+## Why I wrote it
 
-Most good material on running software in production was written for large companies. Teams of
-one to eight people need method without bureaucracy: the minimum that works, with examples they
-can open and copy.
+When I started building a personal-finance SaaS on my own, things were simple: I was designing
+the architecture, and changing it cost almost nothing. As the product grew, every change started
+to have a price, and the project needed structure, above all to be ready for new collaborators.
+So I applied the project-management and operations practices I had used throughout my career.
+
+That is how this handbook was born. It is a living document that matures alongside the
+personal-finance app and the experience I gain along the way.
+
+📖 **[Read the handbook online](https://garon-sys.github.io/saas-handbook/)**
 
 ## What I built
 

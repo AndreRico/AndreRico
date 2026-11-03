@@ -21,20 +21,20 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Genomics
-        menu:
-          - bioinformatics/biofilter4.md
-          - bioinformatics/igem.md
-          - bioinformatics/pharmcat.md
-          - bioinformatics/specimen-bank.md
-          - bioinformatics/genomic-studies.md
+      - href: writing/saas-handbook.md
+        text: SaaS Handbook
       - text: Finance
         menu:
           - finance/12true.md
           - finance/klabin-planning.md
           - finance/klabin-bi.md
-      - href: writing/saas-handbook.md
-        text: SaaS Handbook
+      - text: Genomics
+        menu:
+          - bioinformatics/biofilter4.md
+          - bioinformatics/igem.md
+          - bioinformatics/mynhanes.md
+          - bioinformatics/pmbb-research.md
+          - bioinformatics/pharmcat.md
       - href: publications.md
         text: Publications
       - href: about.md
