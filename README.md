@@ -1,4 +1,4 @@
-# Andre G. Rico
+# Andre Garon Rico
 
 **Financial Data Engineer & FP&A Systems Architect**\
 Anaplan Certified · SAP BW/BPC · Python · AI forecasting\

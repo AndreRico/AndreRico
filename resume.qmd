@@ -1,5 +1,5 @@
 ---
-title: "Andre G. Rico"
+title: "Andre Garon Rico"
 format:
   typst:
     papersize: us-letter
@@ -93,13 +93,28 @@ Gillette do Brasil (P&G) · Network and Windows server administration at ACSP.
 
 ## Projects
 
-**12true** (personal project, 2026 – present): household finance platform on a double-entry ledger,
-with bank sync (Plaid), receipt reading, US tax organizers and an LLM assistant. Django, PostgreSQL,
-React; ~1,700 automated tests.\
-**SaaS Handbook** (2026): open book on managing and operating SaaS for small teams, built with
-Quarto and GitHub Actions. [garon-sys.github.io/saas-handbook](https://garon-sys.github.io/saas-handbook/)\
-**Bioinformatics Handbook** (2026): open book on bioinformatics for human genetics, from molecular
-biology to GWAS, rare variants and pharmacogenomics. [andrerico.github.io/Bioinformatics](https://andrerico.github.io/Bioinformatics/)
+### Finance & data platforms
+- **12true** (personal project, 2026 – present): household finance platform on a double-entry ledger, with
+  bank sync (Plaid), receipt reading, US tax organizers and an LLM assistant. Django, PostgreSQL, React;
+  ~1,700 automated tests, 46 ADRs.
+
+### Open books
+- **SaaS Handbook** (2026): managing and operating SaaS for small teams; the repository is its own example.
+  Quarto, GitHub Actions. [garon-sys.github.io/saas-handbook](https://garon-sys.github.io/saas-handbook/)
+- **Bioinformatics Handbook** (2026): bioinformatics for human genetics, from molecular biology to GWAS,
+  rare variants, pharmacogenomics and knowledge graphs. [andrerico.github.io/Bioinformatics](https://andrerico.github.io/Bioinformatics/)
+
+### Genomic data systems
+- **Biofilter** (2025 – 2026): versioned knowledge platform over 17 public sources; frozen Parquet bundles
+  queried with DuckDB, no database server. [github.com/RitchieLab/biofilter](https://github.com/RitchieLab/biofilter)
+- **IGEM** (2022 – present): gene–exposure knowledge base with 25 ETL pipelines, FastAPI, Python client
+  and public website. [github.com/HallLab/IGEM](https://github.com/HallLab/IGEM)
+- **MyNHANES** (2024): ingestion, harmonization and rule-based transformation of NHANES survey data
+  across cycles; Django, SQLite. [github.com/HallLab/MyNHANES](https://github.com/HallLab/MyNHANES)
+- **PharmCAT** (2024 – present): cross-platform testing and pipeline templates for the open-source
+  pharmacogenomics tool. [pharmcat.clinpgx.org](https://pharmcat.clinpgx.org/)
+- **Penn Medicine BioBank research** (2024 – present): rare-variant and ExWAS studies of hearing loss,
+  ML for cardiovascular traits, and breast cancer research on 260,000+ participants.
 
 ## Education & certifications
 
@@ -109,9 +124,22 @@ biology to GWAS, rare variants and pharmacogenomics. [andrerico.github.io/Bioinf
 
 ## Publications
 
-Rico ALG, Palmiero N, Ritchie MD, Hall MA. Integrated exposomic analysis of lipid phenotypes. *PSB*, 2025 (first author).\
-DRIVE-KG: variant-phenotype association discovery with heterogeneous knowledge graphs. *PSB*, 2026 (co-author).\
-Co-author of medRxiv preprints on nonadditive GWAS (2023) and metal exposure and circulating miRNAs (2025 – 2026).
+- Prado-Rico JM, Bargues-Carot A, …, **Rico ALG**, Hall MA, …, Huang X. Neuron-derived circulating miRNAs
+  reveal lead (Pb) as a key component of metal mixtures exposure. *medRxiv* (preprint), 2026.
+- Rajagopalan A, Nguyen TA, Guare LA, **Rico ALG**, …, Ritchie MD, Hall MA, Romano JD, Setia-Verma S.
+  DRIVE-KG: Enhancing variant-phenotype association discovery in understudied complex diseases using
+  heterogeneous knowledge graphs. *Pacific Symposium on Biocomputing*, 2026 (preprint: *medRxiv*, 2025).
+- Bargues-Carot A, Prado-Rico JM, …, **Rico ALG**, Hall MA, …, Huang X. MicroRNA expression in
+  asymptomatic welders: implications for biomarker discovery for environmentally-linked
+  neurodegenerative disorders. *medRxiv* (preprint), 2025.
+- **Rico ALG**, Palmiero N, Ritchie MD, Hall MA. Integrated exposomic analysis of lipid phenotypes:
+  leveraging GE.db in environment by environment interaction studies. *Pacific Symposium on
+  Biocomputing*, 2025 (first author).
+- Zhou J, **Rico ALG**, Guare L, et al. Flexibly encoded genome-wide association study identifies novel
+  nonadditive genetic risk variants for cardiometabolic traits. *medRxiv* (preprint), 2023.
+- Zhou J, Guare L, **Rico ALG**, Gonzalez Zarzar T, Palmiero N, Assimes TL, Setia-Verma S, Hall MA.
+  Flexibly encoded GWAS identifies novel nonadditive SNPs in individuals of African and European
+  ancestry. *medRxiv* (preprint), 2023.
 
 ## Languages
 
