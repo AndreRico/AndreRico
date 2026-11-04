@@ -43,9 +43,10 @@ statistics, ML and genomic data systems.
 
 ## Education
 
-- **BSc in Data Science** (US equivalent) — University City of São Paulo, Brazil
-- **Postgraduate in Business Administration** — Armando Alvares Penteado University (FAAP), São Paulo
-- **BSc in Accounting** — Mackenzie Presbyterian University, São Paulo
+- **Bachelor's degree, Accounting and Business/Management** — Mackenzie Presbyterian University, São Paulo · 2012 – 2016
+- **Postgraduate specialization in Business Administration (MBA program)** — Fundação Armando Alvares Penteado (FAAP), São Paulo · 2006 – 2007
+- **Bachelor's degree, Data Science** — Universidade Cidade de São Paulo (Unicid) · 2000 – 2004
+  <small>(evaluated as a US bachelor's equivalent)</small>
 
 ## Certifications
 

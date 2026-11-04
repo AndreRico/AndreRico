@@ -34,7 +34,7 @@ double-entry ledger.
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [**SaaS Handbook**](writing/saas-handbook.md) | Open book on managing and operating SaaS for small teams; the repo is its own example. 📖 [Read online](https://garon-sys.github.io/saas-handbook/) | Quarto · GitHub Actions · Pages |
-| **Bioinformatics** *(in progress)* | Open book on genomics and bioinformatics, built from years of notes, in the same format as the SaaS Handbook. 🗺️ [Roadmap](https://github.com/AndreRico/AndreRico/issues/1) | Quarto · GitHub Actions · Pages |
+| [**Bioinformatics Handbook**](writing/bioinformatics-handbook.md) | Open book on bioinformatics for human genetics: from molecular biology to GWAS, rare variants, pharmacogenomics and knowledge graphs. 📖 [Read online](https://andrerico.github.io/Bioinformatics/) | Quarto · Mermaid · GitHub Pages |
 
 ---
 

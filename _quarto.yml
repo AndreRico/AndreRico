@@ -22,8 +22,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: writing/saas-handbook.md
-        text: SaaS Handbook
+      - text: Writing
+        menu:
+          - writing/saas-handbook.md
+          - writing/bioinformatics-handbook.md
       - text: Finance
         menu:
           - finance/12true.md

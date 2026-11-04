@@ -97,12 +97,14 @@ Gillette do Brasil (P&G) · Network and Windows server administration at ACSP.
 with bank sync (Plaid), receipt reading, US tax organizers and an LLM assistant. Django, PostgreSQL,
 React; ~1,700 automated tests.\
 **SaaS Handbook** (2026): open book on managing and operating SaaS for small teams, built with
-Quarto and GitHub Actions. [garon-sys.github.io/saas-handbook](https://garon-sys.github.io/saas-handbook/)
+Quarto and GitHub Actions. [garon-sys.github.io/saas-handbook](https://garon-sys.github.io/saas-handbook/)\
+**Bioinformatics Handbook** (2026): open book on bioinformatics for human genetics, from molecular
+biology to GWAS, rare variants and pharmacogenomics. [andrerico.github.io/Bioinformatics](https://andrerico.github.io/Bioinformatics/)
 
 ## Education & certifications
 
-**BSc in Data Science** (US equivalent) — University City of São Paulo ·
-**Postgraduate in Business Administration** — FAAP · **BSc in Accounting** — Mackenzie Presbyterian University\
+**Bachelor's, Accounting and Business/Management** — Mackenzie Presbyterian University (2016) ·
+**Postgraduate specialization in Business Administration (MBA program)** — FAAP (2007) · **Bachelor's, Data Science** — Universidade Cidade de São Paulo (2004)\
 **Anaplan Certified Model Builder** (2025) · **Registered accountant**, CRC-SP, Brazil (2016)
 
 ## Publications
